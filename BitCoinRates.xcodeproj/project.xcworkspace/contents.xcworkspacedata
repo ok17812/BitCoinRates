@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ByteCoinRates.xcodeproj">
+      location = "self:/Users/evanchang17812/Desktop/My Apps/ByteCoinRates/BitCoinRates.xcodeproj">
    </FileRef>
 </Workspace>

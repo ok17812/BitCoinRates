@@ -13,10 +13,12 @@
 		74B9F2FC24F12C9200AFDA12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9F2FA24F12C9200AFDA12 /* Main.storyboard */; };
 		74B9F2FE24F12C9300AFDA12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9F2FD24F12C9300AFDA12 /* Assets.xcassets */; };
 		74B9F30124F12C9300AFDA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9F2FF24F12C9300AFDA12 /* LaunchScreen.storyboard */; };
+		74B9F30924F12CA400AFDA12 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F30824F12CA400AFDA12 /* CoinManager.swift */; };
+		74B9F30B24F12CB000AFDA12 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9F30A24F12CB000AFDA12 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74B9F2F124F12C9200AFDA12 /* ByteCoinRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoinRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B9F2F124F12C9200AFDA12 /* BitCoinRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCoinRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9F2F424F12C9200AFDA12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B9F2F624F12C9200AFDA12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74B9F2F824F12C9200AFDA12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		74B9F2FD24F12C9300AFDA12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B9F30024F12C9300AFDA12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74B9F30224F12C9300AFDA12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B9F30824F12CA400AFDA12 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		74B9F30A24F12CB000AFDA12 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		74B9F2E824F12C9200AFDA12 = {
 			isa = PBXGroup;
 			children = (
-				74B9F2F324F12C9200AFDA12 /* ByteCoinRates */,
+				74B9F2F324F12C9200AFDA12 /* BitCoinRates */,
 				74B9F2F224F12C9200AFDA12 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,57 @@
 		74B9F2F224F12C9200AFDA12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74B9F2F124F12C9200AFDA12 /* ByteCoinRates.app */,
+				74B9F2F124F12C9200AFDA12 /* BitCoinRates.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74B9F2F324F12C9200AFDA12 /* ByteCoinRates */ = {
+		74B9F2F324F12C9200AFDA12 /* BitCoinRates */ = {
 			isa = PBXGroup;
 			children = (
 				74B9F2F424F12C9200AFDA12 /* AppDelegate.swift */,
 				74B9F2F624F12C9200AFDA12 /* SceneDelegate.swift */,
-				74B9F2F824F12C9200AFDA12 /* ViewController.swift */,
-				74B9F2FA24F12C9200AFDA12 /* Main.storyboard */,
+				74B9F30C24F12CCE00AFDA12 /* Model */,
+				74B9F30D24F12CD900AFDA12 /* Controller */,
+				74B9F30E24F12CE200AFDA12 /* View */,
 				74B9F2FD24F12C9300AFDA12 /* Assets.xcassets */,
 				74B9F2FF24F12C9300AFDA12 /* LaunchScreen.storyboard */,
 				74B9F30224F12C9300AFDA12 /* Info.plist */,
 			);
-			path = ByteCoinRates;
+			path = BitCoinRates;
+			sourceTree = "<group>";
+		};
+		74B9F30C24F12CCE00AFDA12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74B9F30824F12CA400AFDA12 /* CoinManager.swift */,
+				74B9F30A24F12CB000AFDA12 /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74B9F30D24F12CD900AFDA12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74B9F2F824F12C9200AFDA12 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		74B9F30E24F12CE200AFDA12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74B9F2FA24F12C9200AFDA12 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74B9F2F024F12C9200AFDA12 /* ByteCoinRates */ = {
+		74B9F2F024F12C9200AFDA12 /* BitCoinRates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B9F30524F12C9300AFDA12 /* Build configuration list for PBXNativeTarget "ByteCoinRates" */;
+			buildConfigurationList = 74B9F30524F12C9300AFDA12 /* Build configuration list for PBXNativeTarget "BitCoinRates" */;
 			buildPhases = (
 				74B9F2ED24F12C9200AFDA12 /* Sources */,
 				74B9F2EE24F12C9200AFDA12 /* Frameworks */,
@@ -82,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = ByteCoinRates;
+			name = BitCoinRates;
 			productName = ByteCoinRates;
-			productReference = 74B9F2F124F12C9200AFDA12 /* ByteCoinRates.app */;
+			productReference = 74B9F2F124F12C9200AFDA12 /* BitCoinRates.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 74B9F2EC24F12C9200AFDA12 /* Build configuration list for PBXProject "ByteCoinRates" */;
+			buildConfigurationList = 74B9F2EC24F12C9200AFDA12 /* Build configuration list for PBXProject "BitCoinRates" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74B9F2F024F12C9200AFDA12 /* ByteCoinRates */,
+				74B9F2F024F12C9200AFDA12 /* BitCoinRates */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9F30924F12CA400AFDA12 /* CoinManager.swift in Sources */,
 				74B9F2F924F12C9200AFDA12 /* ViewController.swift in Sources */,
+				74B9F30B24F12CB000AFDA12 /* CoinData.swift in Sources */,
 				74B9F2F524F12C9200AFDA12 /* AppDelegate.swift in Sources */,
 				74B9F2F724F12C9200AFDA12 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,12 +318,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FGS79CPDB4;
-				INFOPLIST_FILE = ByteCoinRates/Info.plist;
+				INFOPLIST_FILE = BitCoinRates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.ByteCoinRates;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.BitCoinRates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +336,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FGS79CPDB4;
-				INFOPLIST_FILE = ByteCoinRates/Info.plist;
+				INFOPLIST_FILE = BitCoinRates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.ByteCoinRates;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanchang17812.BitCoinRates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74B9F2EC24F12C9200AFDA12 /* Build configuration list for PBXProject "ByteCoinRates" */ = {
+		74B9F2EC24F12C9200AFDA12 /* Build configuration list for PBXProject "BitCoinRates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74B9F30324F12C9300AFDA12 /* Debug */,
@@ -328,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B9F30524F12C9300AFDA12 /* Build configuration list for PBXNativeTarget "ByteCoinRates" */ = {
+		74B9F30524F12C9300AFDA12 /* Build configuration list for PBXNativeTarget "BitCoinRates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74B9F30624F12C9300AFDA12 /* Debug */,
